@@ -50,9 +50,7 @@ public class MainActivity extends AppCompatActivity {
         call.enqueue(new Callback<ResponseBody>() {
             @Override
             public void onResponse(Call<ResponseBody> call, Response<ResponseBody> response) {
-
                 boolean success = writeResponseBody(response.body());
-
                 Toast.makeText(MainActivity.this, "DONE " + success, Toast.LENGTH_SHORT).show();
             }
 
